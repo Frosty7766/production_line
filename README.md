@@ -1,6 +1,17 @@
-# Production Line Automation System
+# Automated Mechatronic Production Line
 
-This project implements an automated production line system using Arduino, consisting of four main components: sorting, assembly, filling, and handling systems.
+This project implements an automated production line system using Arduino, consisting of four main components: sorting, assembly, filling, and handling systems. The system integrates mechanical and electrical components to automate product handling and packaging operations, guided by precise motion control and sensor feedback.
+
+## Project Information
+- **Course**: SET323: Real-Time and Embedded Systems Design
+- **University**: Egyptian Chinese University
+- **Departments**: 
+  - Department of Mechatronics, Level 3
+  - Department of Software Engineering, Level 3
+- **Supervisor**: Dr. Ahmed Othman
+- **Teaching Assistants**: 
+  - Eng. Hagar Rabea
+  - Nour Mandour
 
 ## Team Members
 - Jomana Mohamed (192100086)
@@ -17,20 +28,26 @@ This project implements an automated production line system using Arduino, consi
 ## System Components
 
 ### 1. Sorting System (sorting_robot.ino)
-- Uses 5 servo motors for precise arm movement
-- Implements 2 IR sensors for object detection
-- Features three positions: lower, upper, and default
+- 6-degree-of-freedom (6 DOF) robotic arm
+- Each joint actuated by a servo motor for precise, multi-axis movement
+- IR sensors for height detection and product sorting
 - Components:
   - Servo motors (5x)
   - IR sensors (2x)
   - Arduino board
+  - Nema 17 Stepper Motor
+  - A4988 Stepper Motor Driver
+  - Micro Vacuum Pump
+  - L297D Driver (for pump control)
 
 ### 2. Assembly System (assembly.ino)
-- Implements stepper motor control for precise movement
-- Features air pump for item handling
+- Vertical (Z) axis assembly/disassembly operations
+- Precise cap placement and removal
 - Components:
-  - Stepper motor
-  - Air pump
+  - Nema 17 Stepper Motor
+  - A4988 Stepper Motor Driver
+  - Micro Vacuum Pump
+  - L297D Driver (for pump control)
   - IR sensor
   - Arduino board
 
@@ -54,6 +71,15 @@ This project implements an automated production line system using Arduino, consi
   - IR sensors (2x)
   - Arduino board
 
+## Operation Sequence
+1. Products are placed on the upper conveyor
+2. IR sensors detect product height and signal the robotic arm
+3. Robotic arm sorts products to designated locations
+4. Sorted products move to assembly station
+5. Stepper-motor-driven suction system handles cap placement/removal
+6. Products proceed to filling station
+7. Handling system manages product movement between stations
+
 ## Hardware Requirements
 - Arduino boards (4x)
 - Servo motors (5x)
@@ -63,6 +89,8 @@ This project implements an automated production line system using Arduino, consi
 - Flow meter (YF-S401)
 - IR sensors (6x)
 - L293N motor driver
+- A4988 Stepper Motor Drivers
+- L297D Drivers
 - Power supply
 - Various connecting wires and components
 
