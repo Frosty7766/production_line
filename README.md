@@ -3,7 +3,9 @@
 This project implements an automated production line system using Arduino, consisting of four main components: sorting, assembly, filling, and handling systems. The system integrates mechanical and electrical components to automate product handling and packaging operations, guided by precise motion control and sensor feedback.
 
 ## Project Information
-- **Course**: SET323: Real-Time and Embedded Systems Design
+- **Courses**: 
+  - SET323: Real-Time and Embedded Systems Design
+  - MCT 324: Embedded System Design
 - **University**: Egyptian Chinese University
 - **Departments**: 
   - Department of Mechatronics, Level 3
