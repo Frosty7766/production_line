@@ -98,7 +98,4 @@ This project implements an automated production line system using Arduino, consi
 - Ensure proper power supply
 - Check all connections before operation
 - Monitor system during operation
-- Follow proper shutdown procedures
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details. 
+- Follow proper shutdown procedures 
