@@ -1,6 +1,6 @@
 # Production Line Automation System
 
-This project implements an automated production line system using Arduino, consisting of three main components: sorting, assembly, and filling systems.
+This project implements an automated production line system using Arduino, consisting of four main components: sorting, assembly, filling, and handling systems.
 
 ## Team Members
 - Jomana Mohamed (192100086)
@@ -45,14 +45,23 @@ This project implements an automated production line system using Arduino, consi
   - IR sensor
   - Arduino board
 
+### 4. Handling System (handling.ino)
+- Dual stepper motor control for product movement
+- IR sensors for start and stop detection
+- Synchronized motor movement
+- Components:
+  - Stepper motors (2x)
+  - IR sensors (2x)
+  - Arduino board
+
 ## Hardware Requirements
-- Arduino boards (3x)
+- Arduino boards (4x)
 - Servo motors (5x)
-- Stepper motor
+- Stepper motors (3x)
 - Air pump
 - Water pump
 - Flow meter (YF-S401)
-- IR sensors (4x)
+- IR sensors (6x)
 - L293N motor driver
 - Power supply
 - Various connecting wires and components
@@ -79,6 +88,11 @@ This project implements an automated production line system using Arduino, consi
 - Valve Control: Pins 11, 12, 13
 - Flow Meter: Pin 2
 
+### Handling System
+- Motor 1: Pins 2, 3
+- Motor 2: Pins 4, 5
+- IR Sensors: Pins 6, 7
+
 ## Installation
 1. Clone this repository
 2. Open each .ino file in Arduino IDE
@@ -93,6 +107,7 @@ This project implements an automated production line system using Arduino, consi
    - Sort items using the robot arm
    - Assemble components using the stepper motor
    - Fill containers with precise liquid volume
+   - Handle product movement between stations
 
 ## Safety Considerations
 - Ensure proper power supply
